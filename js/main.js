@@ -105,7 +105,8 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 1000,
+        autoplayTimeout: 4000,
         items: 1,
         dots: false,
         loop: true,
@@ -126,15 +127,16 @@
         dots: true,
         loop: true,
         nav : false,
+        autoWidth: true,
         responsive: {
             0:{
                 items:1
             },
             576:{
-                items:2
+                items:1
             },
             768:{
-                items:3
+                items:2
             },
             992:{
                 items:2
