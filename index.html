@@ -43,25 +43,26 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none d-lg-block">
+    <div class="container-fluid bg-light">
         <div class="row align-items-center top-bar">
-            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+            <div class="col-lg-3 col-md-2 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
                     <h1 class="text-primary m-0">SVK</h1>
                 </a>
             </div>
-            <div class="col-lg-9 col-md-12 text-end">
+            <div class="col-lg-9 col-md-10 text-end  d-none d-md-block">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <i class="fa fa-phone-alt me-3 text-primary me-2"></i>
-                    <p class="m-0"><a href="tel:532520495" style="color: black">532-520-495</a></p>
+                    <p class="m-0 d-none d-lg-block"><a href="tel:532520495" style="color: black">532-520-495</a></p>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <i class="far fa-envelope-open text-primary me-2"></i>
-                    <p class="m-0"><a href="mailto:kontakt@svk-uslugi.pl" style="color: black">kontakt@svk-uslugi.pl</a></p>
+                    <p class="m-0 d-none d-lg-block"><a href="mailto:kontakt@svk-uslugi.pl" style="color: black">kontakt@svk-uslugi.pl</a></p>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/profile.php?id=100092891205304"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/svk_uslugi/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square text-primary me-1" href="https://www.facebook.com/profile.php?id=100092891205304"><i class="fab fa-facebook-f"></i></a>
+                    <span class="me-4 d-lg-none"></span>
+                    <a class="btn btn-sm-square text-primary me-0" href="https://www.instagram.com/svk_uslugi/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -105,14 +106,21 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- About Start -->
+    <!-- About Start Lg -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">O nas</h6>
+                    <!-- Desktop -->
+                    <div class="d-none d-lg-block">
+                        <h6 class="text-secondary text-uppercase">O nas</h6>
+                    </div>
+                    <!-- Mobile and tablets-->
+                    <div class="d-lg-none">
+                        <h6 class="text-secondary text-uppercase text-center">O nas</h6>
+                    </div>
                     <h1 class="mb-4">Jesteśmy na rynku od 2020 roku</h1>
-                    <p class="mb-4">Jesteśmy doświadczoną firmą ogrodniczą, specjalizującą się w profesjonalnej pielęgnacji ogrodów. Naszym celem jest utrzymanie piękna i zdrowia Twojego ogrodu poprzez kompleksowe usługi konserwacyjne.</p>
+                    <p class="mb-4 text-justify">Jesteśmy doświadczoną firmą ogrodniczą, specjalizującą się w profesjonalnej pielęgnacji ogrodów. Naszym celem jest utrzymanie piękna i zdrowia Twojego ogrodu poprzez kompleksowe usługi konserwacyjne.</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Terminowość i pełny profesjonalizm</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Dopasowywujemy się pod potrzemy klienta</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Porady telefoniczne 24/7</p>
@@ -126,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pt-4" style="min-height: 500px;">
+                <div class="col-lg-6 pt-4 d-none d-lg-block" style="min-height: 500px;">
                     <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
                         <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
